@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component name="org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig" activate="activate">
+        <implementation class="org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /services/unicom/v1
+        </property>
+        <property name="sling.servlet.extensions">
+            html
+        </property>
+        <property name="service.pid" value="org.nikhil.ServletWithOsgiConfig"/>
+        <property name="service.description" value="Simple Servlet calling path /services/unicom/v1"/>
+        <property name="service.vendor" value="Nikhil @ Adobe"/>
+    </scr:component>
+</components>

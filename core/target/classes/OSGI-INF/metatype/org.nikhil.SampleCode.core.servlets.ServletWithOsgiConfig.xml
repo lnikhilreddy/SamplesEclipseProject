@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig">
+    <OCD id="org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig" name="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.name" description="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.description">
+        <AD id="service.pid" type="String" default="org.nikhil.ServletWithOsgiConfig" name="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.service.pid.name" description="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.service.pid.description"/>
+        <AD id="service.description" type="String" default="Simple\ Servlet\ calling\ path\ /services/unicom/v1" name="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.service.description.name" description="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.service.description.description"/>
+        <AD id="service.vendor" type="String" default="Nikhil\ @\ Adobe" name="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.service.vendor.name" description="%org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig.service.vendor.description"/>
+    </OCD>
+    <Designate pid="org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig">
+        <Object ocdref="org.nikhil.SampleCode.core.servlets.ServletWithOsgiConfig"/>
+    </Designate>
+</metatype:MetaData>
