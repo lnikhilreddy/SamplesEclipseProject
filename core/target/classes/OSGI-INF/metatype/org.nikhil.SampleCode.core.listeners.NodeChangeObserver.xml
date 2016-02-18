@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.nikhil.SampleCode.core.listeners.NodeChangeObserver">
+    <OCD id="org.nikhil.SampleCode.core.listeners.NodeChangeObserver" name="%org.nikhil.SampleCode.core.listeners.NodeChangeObserver.name" description="%org.nikhil.SampleCode.core.listeners.NodeChangeObserver.description">
+        <AD id="observer.node.path" type="String" default="/content" name="%org.nikhil.SampleCode.core.listeners.NodeChangeObserver.observer.node.path.name" description="%org.nikhil.SampleCode.core.listeners.NodeChangeObserver.observer.node.path.description"/>
+    </OCD>
+    <Designate pid="org.nikhil.SampleCode.core.listeners.NodeChangeObserver">
+        <Object ocdref="org.nikhil.SampleCode.core.listeners.NodeChangeObserver"/>
+    </Designate>
+</metatype:MetaData>
