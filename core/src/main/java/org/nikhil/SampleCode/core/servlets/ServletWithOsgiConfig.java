@@ -60,7 +60,7 @@ public class ServletWithOsgiConfig extends SlingSafeMethodsServlet {
 		//Read single value
 		this.value1 = PropertiesUtil.toString(config.get("service.description"),"default value is");
 	
-		//Read multivalue
+		//Read multivaluessss
 		//this.value2=PropertiesUtil.toStringArray(config.get(VALUE2));
 		//this.value3=PropertiesUtil.toStringArray(config.get(VALUE3));
 		//Then convert value 3 to Long.
