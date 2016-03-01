@@ -71,7 +71,8 @@ private Logger log = LoggerFactory.getLogger(getClass());
 	
 
 	public void onEvent(EventIterator itr) {
-		log.error("Found event !!!!!!");
+		log.error("@@@@@@@@@@@@@@@@@@@@@@@");
+		log.info("######################## ");
 	}
 
 	

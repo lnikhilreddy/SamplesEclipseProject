@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.nikhil.SampleCode.core.service.SampleServiceImpl">
+        <implementation class="org.nikhil.SampleCode.core.service.SampleServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="org.nikhil.SampleCode.core.service.SampleService"/>
+            <provide interface="io.sightly.java.api.Use"/>
+        </service>
+        <property name="service-name" value="my-sample"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.nikhil.SampleCode.core.service.SampleServiceImpl"/>
+    </scr:component>
+</components>

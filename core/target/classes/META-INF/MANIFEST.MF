@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1455759402638
+Bnd-LastModified: 1456851564663
 Build-Jdk: 1.7.0_75
 Built-By: vidya
 Bundle-Description: Core bundle for SampleCode
@@ -9,35 +9,52 @@ Bundle-SymbolicName: org.nikhil.SampleCode.core
 Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Export-Package: org.nikhil.SampleCode.core.filters;version="0.0.1";uses:
- ="javax.servlet",org.nikhil.SampleCode.core.listeners;version="0.0.1";u
- ses:="javax.jcr,javax.jcr.observation,org.apache.sling.jcr.api,org.osgi
- .service.component,org.osgi.service.event",org.nikhil.SampleCode.core.m
- odels;version="0.0.1";uses:="javax.annotation,javax.inject,org.apache.s
+ ="javax.servlet",org.nikhil.SampleCode.core.json;version="0.0.1";uses:=
+ "javax.servlet,org.apache.sling.api,org.apache.sling.api.servlets",org.
+ nikhil.SampleCode.core.listeners;version="0.0.1";uses:="javax.jcr,javax
+ .jcr.observation,org.apache.sling.jcr.api,org.osgi.service.component,or
+ g.osgi.service.event",org.nikhil.SampleCode.core.models;version="0.0.1"
+ ;uses:="com.adobe.cq.sightly,javax.annotation,javax.inject,org.apache.s
  ling.api.resource,org.apache.sling.models.annotations",org.nikhil.Sampl
  eCode.core;version="1.0",org.nikhil.SampleCode.core.schedulers;version=
- "0.0.1",org.nikhil.SampleCode.core.servlets;version="0.0.1";uses:="java
- x.servlet,org.apache.sling.api,org.apache.sling.api.servlets"
-Import-Package: javax.annotation,javax.inject;version="[0.0,1)",javax.jc
- r;version="[2.0,3)",javax.jcr.observation;version="[2.0,3)",javax.servl
- et,org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.request;
- version="[2.4,3)",org.apache.sling.api.resource;version="[2.5,3)",org.a
- pache.sling.api.servlets;version="[2.1,3)",org.apache.sling.commons.osg
- i;version="[2.2,3)",org.apache.sling.jcr.api;version="[2.2,3)",org.apac
- he.sling.models.annotations;version="[1.0,2)",org.apache.sling.settings
- ;version="[1.3,2)",org.osgi.service.component;version="[1.1,2)",org.osg
- i.service.event;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+ "0.0.1",org.nikhil.SampleCode.core.service;version="0.0.1";uses:="com.a
+ dobe.cq.sightly",org.nikhil.SampleCode.core.servlets;version="0.0.1";us
+ es:="javax.servlet,org.apache.sling.api,org.apache.sling.api.servlets",
+ org.nikhil.SampleCode.core.sightly.bindings;version="0.0.1";uses:="java
+ x.script,org.apache.sling.api.resource,org.apache.sling.scripting.api,o
+ rg.mozilla.javascript"
+Import-Package: com.adobe.cq.sightly;version="[2.2,3)",javax.annotation,
+ javax.inject;version="[0.0,1)",javax.jcr;version="[2.0,3)",javax.jcr.ob
+ servation;version="[2.0,3)",javax.script,javax.servlet,org.apache.sling
+ .api;version="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",o
+ rg.apache.sling.api.resource;version="[2.5,3)",org.apache.sling.api.ser
+ vlets;version="[2.1,3)",org.apache.sling.commons.json;version="[2.0,3)"
+ ,org.apache.sling.commons.json.jcr;version="[2.0,3)",org.apache.sling.c
+ ommons.osgi;version="[2.2,3)",org.apache.sling.jcr.api;version="[2.2,3)
+ ",org.apache.sling.models.annotations;version="[1.0,2)",org.apache.slin
+ g.scripting.api;version="[2.2,3)",org.apache.sling.settings;version="[1
+ .3,2)",org.mozilla.javascript,org.osgi.service.component;version="[1.1,
+ 2)",org.osgi.service.event;version="[1.2,2)",org.slf4j;version="[1.5,2)
+ "
 Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
- rvlet.Filter";service.ranking=-700;sling.filter.scope=REQUEST;service.v
- endor=Adobe,osgi.service;effective:=active;objectClass="javax.servlet.S
- ervlet";service.description="Simple Servlet calling path /services/unic
- om/v1";service.vendor="Nikhil @ Adobe",osgi.service;effective:=active;o
- bjectClass="org.osgi.service.event.EventHandler";event.topics="org/apac
- he/sling/api/resource/Resource/*";service.vendor=Adobe,osgi.service;eff
- ective:=active;objectClass="javax.jcr.observation.EventListener";servic
- e.description="Sample Event Handler Example";service.vendor=Adobe;obser
- ver.node.path="/content",osgi.service;effective:=active;objectClass="ja
- va.lang.Runnable";scheduler.expression="*/30 * * * * ?";scheduler.concu
- rrent=false;service.vendor=Adobe
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="org.apache.sling.scripting.api.BindingsValuesProvider";javax.s
+ cript.name=sightly;service.vendor=Adobe,osgi.service;effective:=active;
+ objectClass="javax.servlet.Filter";service.ranking=-700;sling.filter.sc
+ ope=REQUEST;service.vendor=Adobe,osgi.service;effective:=active;objectC
+ lass="javax.servlet.Servlet";service.description="Simple Servlet callin
+ g path /services/unicom/v1";service.vendor="Nikhil @ Adobe",osgi.servic
+ e;effective:=active;objectClass="org.osgi.service.event.EventHandler";e
+ vent.topics="org/apache/sling/api/resource/Resource/*";service.vendor=A
+ dobe,osgi.service;effective:=active;objectClass="javax.jcr.observation.
+ EventListener";service.description="Sample Event Handler Example";servi
+ ce.vendor=Adobe;observer.node.path="/content",osgi.service;effective:=a
+ ctive;objectClass="java.util.Map";javax.script.name=any;service.vendor=
+ Adobe,osgi.service;effective:=active;objectClass:List<String>="org.nikh
+ il.SampleCode.core.service.SampleService,io.sightly.java.api.Use";servi
+ ce-name=my-sample;service.vendor=Adobe,osgi.service;effective:=active;o
+ bjectClass="java.lang.Runnable";scheduler.expression="*/30 * * * * ?";s
+ cheduler.concurrent=false;service.vendor=Adobe
 Require-Capability: osgi.service;effective:=active;filter:="(objectClass
  =org.apache.sling.jcr.api.SlingRepository)",osgi.ee;filter:="(&(osgi.ee
  =JavaSE)(version=1.6))"
@@ -45,7 +62,11 @@ Service-Component: OSGI-INF/org.nikhil.SampleCode.core.listeners.NodeCha
  ngeObserver.xml,OSGI-INF/org.nikhil.SampleCode.core.filters.LoggingFilt
  er.xml,OSGI-INF/org.nikhil.SampleCode.core.schedulers.SimpleScheduledTa
  sk.xml,OSGI-INF/org.nikhil.SampleCode.core.servlets.ServletWithOsgiConf
- ig.xml,OSGI-INF/org.nikhil.SampleCode.core.listeners.SimpleResourceList
- ener.xml
+ ig.xml,OSGI-INF/org.nikhil.SampleCode.core.service.SampleServiceImpl.xm
+ l,OSGI-INF/org.nikhil.SampleCode.core.listeners.SimpleResourceListener.
+ xml,OSGI-INF/org.nikhil.SampleCode.core.sightly.bindings.MyCustomFuncti
+ onUsingBaseFunctionBVP.xml,OSGI-INF/org.nikhil.SampleCode.core.json.Con
+ vertResourceToJSONServlet.xml,OSGI-INF/org.nikhil.SampleCode.core.sight
+ ly.bindings.SightlyBindingsUsingHashMap.xml
 Sling-Model-Packages: org.nikhil.SampleCode.core
 Tool: Bnd-2.3.0.201405100607

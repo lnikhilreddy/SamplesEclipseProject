@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.nikhil.SampleCode.core.service.SampleServiceImpl">
+    <OCD id="org.nikhil.SampleCode.core.service.SampleServiceImpl" name="%org.nikhil.SampleCode.core.service.SampleServiceImpl.name" description="%org.nikhil.SampleCode.core.service.SampleServiceImpl.description">
+        <AD id="service-name" type="String" default="my-sample" name="%org.nikhil.SampleCode.core.service.SampleServiceImpl.service-name.name" description="%org.nikhil.SampleCode.core.service.SampleServiceImpl.service-name.description"/>
+    </OCD>
+    <Designate pid="org.nikhil.SampleCode.core.service.SampleServiceImpl" factoryPid="org.nikhil.SampleCode.core.service.SampleServiceImpl">
+        <Object ocdref="org.nikhil.SampleCode.core.service.SampleServiceImpl"/>
+    </Designate>
+</metatype:MetaData>

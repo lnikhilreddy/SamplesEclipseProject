@@ -220,5 +220,10 @@
             <groupId>com.day.cq.wcm</groupId>
             <artifactId>cq-wcm-taglib</artifactId>
         </dependency>
+        <dependency>
+        	<groupId>rhino</groupId>
+        	<artifactId>js</artifactId>
+        	<version>1.6R6</version>
+        </dependency>
     </dependencies>
 </project>

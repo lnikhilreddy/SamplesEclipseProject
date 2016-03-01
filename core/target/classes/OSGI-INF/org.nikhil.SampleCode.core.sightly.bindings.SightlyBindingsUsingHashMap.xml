@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.nikhil.SampleCode.core.sightly.bindings.SightlyBindingsUsingHashMap">
+        <implementation class="org.nikhil.SampleCode.core.sightly.bindings.SightlyBindingsUsingHashMap"/>
+        <service servicefactory="false">
+            <provide interface="java.util.Map"/>
+        </service>
+        <property name="javax.script.name" value="any"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.nikhil.SampleCode.core.sightly.bindings.SightlyBindingsUsingHashMap"/>
+    </scr:component>
+</components>

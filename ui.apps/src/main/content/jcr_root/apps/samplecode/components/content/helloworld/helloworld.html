@@ -15,6 +15,11 @@
 */-->
 <p data-sly-test="${properties.text}">Text property value in jcr is : ${properties.text}</p>
 
+<p>Property set in the Sightly Bindings Global Variable using HashMap is : ${javaNikhilsVersion} </p>
+
+<p>Property set in the Sightly Bindings Global Sightly Variable by extending Rhino BaseFunction is not working directly in JSTL : ${bindingCustomFunction} </p>
+
+
 <p data-sly-use.hello="org.nikhil.SampleCode.core.models.HelloWorldModel">
 <b>HelloWorldModel</b> says: <b>${hello.message}</b>
 </p>
@@ -24,7 +29,7 @@
 </p>
 
 <div data-sly-use.jsinfo="helloworld.js">
-	<p><b>Sightly JS using WCM use api</b></p>
+	<p><b><u>Sightly JS using WCM use api</u></b></p>
 	<br/>
 	<p>Sightly Code -> info.helloWorld = sling.getService(Packages.org.nikhil.SampleCode.core.models.HelloWorldModel)</p>
 	<p>{jsinfo.helloWorld.message}  :: ${jsinfo.helloWorld.message} (Not Working)<p>
@@ -38,5 +43,12 @@
 	<p>Sightly Code -> info.ssimpl = org.nikhil.SampleCode.core.service.SampleServiceImpl;</p>
 	<p>{jsinfo.ssimpl.hello}  :: ${jsinfo.ssimpl.hello} ( Working )<p>
 	<br/>
+	<p>Sightly Code -> info.bindingHashMapVariable = javaNikhilsVersion;</p>
+	<p>{jsinfo.bindingHashMapVariable}  :: ${jsinfo.bindingHashMapVariable} ( Working )<p>
+	<br/>
+	<p>Sightly Code -> info.bindingCustomFunction = bindingCustomFunction;</p>
+	<p>{jsinfo.bindingCustomFunction}  :: ${jsinfo.bindingCustomFunction} ( Working )<p>
+	<br/>
+
 </div>
 

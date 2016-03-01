@@ -28,7 +28,9 @@ You will see the value entered in Admin Config Manager (/system/console/configMg
 )
 
 ### To handle all requests for a Page with a special selector
-http://www.fake.com/content/page.mycustomselector.html
+
+http://www.fake.com/content/page.mycustomselector.html 
+
 @SlingServlet(
     resourceTypes = {"cq:Page"},
     methods = {"GET"},
@@ -36,7 +38,9 @@ http://www.fake.com/content/page.mycustomselector.html
 )
 
 ### To handle all requests for a Page with a special extension.
+
 http://www.fake.com/content/page.myfakeext
+
 @SlingServlet(
     resourceTypes = {"cq:Page"},
     methods = {"GET"},

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.nikhil.SampleCode.core.json.ConvertResourceToJSONServlet">
+    <OCD id="org.nikhil.SampleCode.core.json.ConvertResourceToJSONServlet" name="%org.nikhil.SampleCode.core.json.ConvertResourceToJSONServlet.name" description="%org.nikhil.SampleCode.core.json.ConvertResourceToJSONServlet.description"/>
+    <Designate pid="org.nikhil.SampleCode.core.json.ConvertResourceToJSONServlet">
+        <Object ocdref="org.nikhil.SampleCode.core.json.ConvertResourceToJSONServlet"/>
+    </Designate>
+</metatype:MetaData>
